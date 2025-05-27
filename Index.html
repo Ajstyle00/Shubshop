@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShubShop - Traditional Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/glidejs@3.6.0/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://bing.com/th/id/BCO.320a739e-c542-4b28-8e81-a4fb46cdabb9.png" alt="ShubShop Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="currency-toggle">
+                <select id="currency">
+                    <option value="INR">₹ INR</option>
+                    <option value="USD">$ USD</option>
+                </select>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <h1>Discover ShubShop</h1>
+            <p>Elevate Your Style with Authentic Kurtas & Suits</p>
+            <a href="#featured" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="section featured">
+        <div class="container">
+            <h2>Featured Collections</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1591195853828-11ae3d9a8d17')">
+                        <div class="overlay">
+                            <i class="fas fa-search zoom-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Men's Silk Kurta</h3>
+                    <p class="price" data-base-price="2499">₹2499</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1591195853828-11ae3d9a8d17')">
+                        <div class="overlay">
+                            <i class="fas fa-search zoom-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Women's Anarkali Suit</h3>
+                    <p class="price" data-base-price="3499">₹3499</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section categories">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">Men’s Kurtas</div>
+                <div class="category-item">Women’s Suits</div>
+                <div class="category-item">Festive Wear</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="section new-arrivals">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="product-item">
+                                <img src="https://images.unsplash.com/photo-1591195853828-11ae3d9a8d17" alt="Embroidered Kurta">
+                                <h3>Embroidered Kurta</h3>
+                                <p class="price" data-base-price="2999">₹2999</p>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="product-item">
+                                <img src="https://images.unsplash.com/photo-1591195853828-11ae3d9a8d17" alt="Churidar Suit">
+                                <h3>Churidar Suit</h3>
+                                <p class="price" data-base-price="3999">₹3999</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="section deals">
+        <div class="container">
+            <h2>Exclusive Deals</h2>
+            <div class="deal-item">
+                <img src="https://images.unsplash.com/photo-1591195853828-11ae3d9a8d17" alt="Festive Kurta">
+                <h3>Festive Kurta Sale</h3>
+                <p class="price" data-base-price="1999">₹1999</p>
+                <div class="countdown" id="countdown"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h2>About ShubShop</h2>
+            <p>ShubShop brings you the finest collection of traditional Indian clothing, crafted with love and inspired by culture.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item fade-in">“Amazing quality kurtas!” - Priya S.</div>
+                <div class="testimonial-item fade-in">“Fast delivery and vibrant designs.” - Rahul K.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Pop-up -->
+    <div id="newsletter-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Join ShubShop’s Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ShubShop. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/glidejs@3.6.0/dist/glide.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
